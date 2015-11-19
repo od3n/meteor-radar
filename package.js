@@ -1,8 +1,8 @@
 Package.describe({
     name: 'zweicoder:radar',
-    summary: "A library to tag items with GPS coordinates and allows simple querying for nearby items. Set a location for your collections, or anything at all! Let clients discover what's nearby them.",
+    summary: "A library to tag items with GPS coordinates and allows simple querying for nearby items.",
     version: '0.0.1',
-    git: ''
+    git: 'https://github.com/zweicoder/meteor-radar'
 });
 
 Package.onUse(function (api) {

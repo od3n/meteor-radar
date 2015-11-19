@@ -1,6 +1,8 @@
 # Radar
 A library to tag items with GPS coordinates and allows simple querying for nearby items. Set a location for your collections, or anything at all! Let clients discover what's nearby them.
 
+For modularity it tags a given key with the coordinates given instead of storing the whole Mongo Collection.
+
 ## Usage
 ```
 // Initialize with default options.
@@ -31,7 +33,11 @@ Registers the given key with some GPS coordinates. Defaults to the user's curren
     - `lat` : Latitude
     - `lon` : Longitude
 
+### unregister(key)
+Unregisters the key from `Radar`
+
 ### get()
 Returns a `Mongo` cursor for the list of `items` that are within the `maxDistance` set. The `items` contains the `key` which can be used to get your collection.
+
 
 ## Tests (In progress)
